@@ -18,9 +18,10 @@ app.get('/users', (req, res) => {
 
 
 // Error handler
-app.use((err, req, res) => {
-  console.error(err);
-  res.status(500).send('Internal Serverless Error');
+app.use((req, res, next) => {
+  return res.status(404).json({
+  message:"Not Found"
+  })
 });
 
 try {

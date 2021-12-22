@@ -1,6 +1,6 @@
 org: jimioniay
 app: express-starter
-component: express
+component: express@3.0.1
 name: express-starter
 stage: dev
 
