@@ -1,7 +1,8 @@
 app: express-starter
 component: express
 name: express-starter
+stage: dev
 
 inputs:
   src: ./
-region: us-east-1
+  region: us-east-1

@@ -4,7 +4,7 @@
 const express = require('express');
 
 const app = express();
-
+const PORT = '3000';
 // Routes
 
 app.get('/users', (req, res) => {
@@ -15,9 +15,6 @@ app.get('/users', (req, res) => {
   })
 });
 
-app.get('/*', (req, res) => {
-  res.send(`Request received: ${req.method} - ${req.path}`);
-});
 
 
 // Error handler
@@ -25,5 +22,11 @@ app.use((err, req, res) => {
   console.error(err);
   res.status(500).send('Internal Serverless Error');
 });
+
+try {
+  app.listen(PORT, () => console.log(`Server started on port ${PORT} ...`));
+} catch (error) {
+  console.log("error")
+}
 
 module.exports = app;
