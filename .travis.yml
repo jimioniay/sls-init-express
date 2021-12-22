@@ -7,4 +7,4 @@ cache:
 script: 
     - npm install -g serverless
     - npm run test
-    - sls deploy --verbose
+    - sls deploy
