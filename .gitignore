@@ -1,2 +1,10 @@
-node_modules
-.serverless
+.env*
+/.eslintcache
+/node_modules
+/package-lock.json
+/src/_express/node_modules
+/src/_src/node_modules
+/src/node_modules
+/test/src/node_modules
+/test/src/package-lock.json
+.DS_Store
