@@ -1,0 +1,7 @@
+app: express-starter
+component: express
+name: express-starter
+
+inputs:
+  src: ./
+region: us-east-1
